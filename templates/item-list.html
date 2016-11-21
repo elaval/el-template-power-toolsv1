@@ -1,0 +1,14 @@
+<h1>List of items</h1>
+<md-progress-bar mode="indeterminate" *ngIf="!names">Getting data ...</md-progress-bar>
+<div *ngIf="names">
+  <md-list class="list departments">
+    <md-list-item *ngFor="let name of names"
+    (click)="onSelect(name)"
+    [class.active]="name === selectedCategory">
+    >
+      <h3 md-line> {{name}} </h3>
+    </md-list-item>
+  </md-list>
+</div>
+
+
