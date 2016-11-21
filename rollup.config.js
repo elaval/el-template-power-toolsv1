@@ -25,7 +25,7 @@ export default {
   moduleName: "App",
   format: "umd",
   targets: [
-    { dest: './js/App.js', format: 'umd'}
+    { dest: './js-rollup/App.js', format: 'umd'}
   ]
 };
 
